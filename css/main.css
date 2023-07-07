@@ -1,0 +1,291 @@
+
+  body { background-color: rgb(252, 250, 246); }
+
+   /* NAVIGATION */
+   .nav-main{
+    /* border: 1px solid red; */
+    margin-top: 2rem;
+    display: flex;
+    /* border-bottom: 2px solid rgb(21, 21, 21); */
+  }
+
+  .logo{
+    margin-left: 3rem;
+  }
+
+  .navigation{
+    padding-bottom: 1.3rem;
+    border-bottom: 1px rgb(122, 121, 100);
+    box-shadow: 0 8px 6px -6px rgb(122, 121, 100);
+  }
+
+  .nav-main-item {
+    font-family: "sf-bold", sans-serif;
+    font-size: 1rem;
+    display: inline-block;
+    color: rgb(122, 121, 100);
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+  }
+
+  .nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus  {
+    color: rgb(165, 167, 143);
+  }
+
+  /* NAV IMAGE CHANGE */
+  .image-container {
+    display: block;
+  }
+
+  .original-image {
+    width:25px;
+    height: 25px;
+  }
+
+  .hover-image {
+    display: none;
+    width:25px;
+    height: 25px;
+  }
+
+  .image-container:hover .hover-image {
+    display: block;
+  }
+
+  .image-container:hover .original-image {
+    display: none;
+  }
+  
+ h1 {
+  	font-family: "playfair", serif;
+    text-align: center;
+  	font-size: 3.25rem;
+    color: rgb(36, 31, 25);
+  }
+
+   h1.title{
+  	font-family: "playfair", serif;
+    color: white;
+    text-align: center;
+  	font-size: 3.25rem;
+  }
+
+  h2 {
+    font-family: "playfair", serif;
+    margin-left: 5rem;
+    font-size: 1.75rem;
+    color: rgb(36, 31, 25);
+  }
+
+  .no-margin {
+    margin-left: 0rem;
+  }
+
+  /* .different2 {
+    font-family: "playfair", serif;
+    margin-left: 0rem;
+    font-size: 1.75rem;
+  } */
+
+  h3 {
+    font-family: "sf", sans-serif;
+    margin-left: 5rem;
+    font-size: 1.75rem;
+    margin-bottom: -1rem;
+    color: rgb(36, 31, 25);
+  }
+
+  h4 {
+    font-family: "sf", sans-serif;
+    margin-left: 5rem;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: rgb(36, 31, 25);
+  }
+
+  p {
+    font-family: "sf", sans-serif;
+    margin-left: 5rem;
+    font-size: 1rem;
+    max-width: 30rem;
+    color: rgb(36, 31, 25);
+  }
+
+  form {
+    font-family: "sf", sans-serif;
+    font-size: 1.25rem;
+    margin: 5rem;
+    color: rgb(36, 31, 25);
+  }
+
+  label {
+    margin-bottom: 10px;
+    display: block;
+    color: rgb(36, 31, 25);
+  }
+
+  input[type=date], input[type="submit"] {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(36, 31, 25);
+  }
+
+  input[type="submit"] {
+    float: right;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(165, 167, 143);
+    border-radius: 25px;
+    font-family: "sf", sans-serif;
+    font-size: 1rem;
+    color: white;
+    color: rgb(36, 31, 25);
+  }
+
+  input[type="submit"]:hover {
+    background-color: rgb(122, 121, 100);
+    color: rgb(36, 31, 25);
+  }
+
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(36, 31, 25);
+  }
+
+  a {
+      text-decoration: none;
+      color: rgb(102, 75, 62);
+  }
+
+  ol, ul {
+   font-family: "sf", sans-serif;
+   font-size: 1rem;
+   max-width: 100rem;
+   color: rgb(36, 31, 25);
+ }
+
+ .whitetext {
+  color: white;
+ }
+
+ /* button  */
+ .book-now {
+  font-family: "sf-bold", sans-serif;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 1.25rem;
+  margin: auto;
+  display: flex;
+  display: grid;
+  background-color: rgb(196, 151, 128);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+  width: 112px;
+}
+
+.book-now:active, .book-now:hover, .book-now:focus {
+  background-color: rgb(221, 176, 153);
+  color: white;
+}
+
+/* end of button  */
+
+
+ /* footer section  */
+
+ .footer{
+  border-top: 2px solid rgb(102, 75, 62);;
+ }
+
+ .footer-content{
+  margin:2rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+ }
+
+ .styleguide div, .Lotus div, .about div{
+    font-size: 1.3rem;
+ }
+
+ .styleguide div:nth-last-of-type(3){
+  color: gray;
+  font-size: 1.1rem;
+ }
+
+ .Lotus div:nth-last-of-type(4){
+  color: gray;
+  font-size: 1.1rem;
+ }
+
+ .about div:nth-last-of-type(2){
+  color: gray;
+  font-size: 1.1rem;
+ }
+
+ .footnote{
+  display: flex;
+  justify-content: center;
+  margin-right: 4rem;
+ }
+
+ /* end of footer section  */
+
+/* Styleguide */
+ .colorboxlayout {
+   padding-left: 1rem;
+   display: flex;
+   flex: 1 1 15em;
+ }
+
+ .colorboxlightpink {
+   background-color: rgb(231, 208, 190);
+   margin: 1rem;
+   padding: 2.5rem;
+   border-radius: 25px;
+ }
+
+ .colorboxdarkpink {
+   background-color: rgb(196, 151, 128);
+   margin: 1rem;
+   padding: 2.5rem;
+   border-radius: 25px;
+ }
+
+ .colorboxlightgreen {
+   background-color: rgb(165, 167, 143);
+   margin: 1rem;
+   padding: 2.5rem;
+   border-radius: 25px;
+ }
+
+ .colorboxdarkgreen {
+   background-color: rgb(122, 121, 100);
+   margin: 1rem;
+   padding: 2.5rem;
+   border-radius: 25px;
+ }
+
+
+ /* @media (max-width: 75em) {
+ 	h1, h2, h3, h4, p, form {
+ 		margin-left: 2rem;
+ 	}
+  p {
+    max-width: 15rem;
+}
+h1 {
+  font-size: 2.75rem;
+}
+ } */

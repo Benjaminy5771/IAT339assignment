@@ -1,0 +1,113 @@
+/* background image */
+.backimgclass {
+  background-image: url("./images/our-classes.jpg");
+
+  /* background-size: 3.2em; */
+
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  padding-left:0;
+  padding-right:0;
+
+  /* width: 100vw; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class-overview {
+    /* border: 1px solid red; */
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.class-overview h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.class-overview p {
+    /* border: 1px solid red; */
+    max-width: 70%;
+    margin: auto;
+    font-size: 1.15rem;
+}
+
+.class-intro-sec {
+    margin-top: 8rem;
+    border-bottom: 3px solid rgb(147, 125, 114);
+    padding-bottom: 1rem;
+}
+
+.class-intro {
+    margin-top: 3rem;
+}
+
+.class-intro p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+.class-intro h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 3rem;
+} 
+
+.class-image{
+    width: 100%;
+    height:auto;
+}
+
+
+
+
+.class-intro-sec-reverse {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 7rem 5rem;
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid rgb(147, 125, 114);;
+}
+
+.class-intro-sec-reverse img{
+    margin-left: 5rem;
+    width:100%
+}
+
+
+  .class-intro-sec-reverse h2{
+    margin-left: 3rem;
+  }
+  
+  .class-info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+
+
+
+  @media (max-width: 1000px) {
+    .class-intro-sec-reverse {
+      flex-direction: column;
+    }
+    
+    .class-info {
+      order: 2;
+    }
+    
+    .class-image {
+      order: 1;
+    }
+  }
+  
+  

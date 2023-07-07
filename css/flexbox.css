@@ -1,0 +1,156 @@
+/* NAV BAR CONTAINER */
+.container {
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+}
+
+.nav-main {
+  float: right;
+  margin-top: -2rem;
+}
+
+.nav-main {
+  float: right;
+}
+
+.nav-main i {
+  visibility: hidden;
+}
+
+
+/* background image */
+.backimg {
+  background-image: url("../images/background.jpg");
+}
+
+  /* BOXES */
+  .container4 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .overview {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .container3 {
+    padding: 1rem;
+    display: flex;
+    padding-top: 0;
+  }
+  
+
+  .box {
+    /* Shorthand for 3 properties: flex-grow, flex-shrink, and glex-basis */
+    /* flex-grow -> for all these box items, let them take up up X amount of space (ie 3:1, 2:1, 1:1) */
+    /* flex-shrink: if there is a need for space, how much should this element shrink */
+    /* flex-basis: auto goes to the size of the element outside of the flex */
+    flex: 1 1 15em;
+    background-color: rgb(231, 208, 190);
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  }
+
+
+  /* CONTACT US */
+  .container5 {
+    background-color: rgb(165, 167, 143);
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    margin: 2rem;
+  }
+
+
+  /* BOOK CLASS */
+  .container6 {
+    background-color: rgb(196, 151, 128);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 2rem;
+  }
+
+  .classlist {
+    flex: 1 1 15em;
+    flex-direction: column;
+    background-color: rgb(231, 208, 190);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+
+  /* PAYMENT */
+  .container8 {
+    background-color: rgb(231, 208, 190);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 2rem;
+    flex: 8 1 5em;
+    order: 1;
+  }
+
+  .container7 {
+    background-color: rgb(231, 208, 190);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-height: 12em;
+    margin: 2rem;
+    border-radius: 25px;
+    flex: 1 1 15em;
+    order: 2;
+  }
+
+  .paymentbox {
+    display: flex;
+  }
+
+  /* PAYMENT SCREEN */
+  .container9 {
+    background-color: rgb(122, 121, 100);
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .homebutton {
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: rgb(165, 167, 143);
+    border-radius: 25px;
+    font-family: "sf", sans-serif;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .homebutton:active,
+  .homebutton:hover,
+  .homebutton:focus {
+    background-color: rgb(122, 121, 100);
+    background-color: rgb(140, 142, 118);
+  }
+
+  /* @media (max-width: 75em) {
+    .container3 {
+      flex-direction: column;
+    }
+
+    .paymentbox {
+      flex-direction: column;
+    }
+
+    .container8 {
+      order: 2;
+    }
+
+    .container7 {
+      order: 1;
+    }
+  } */

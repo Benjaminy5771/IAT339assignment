@@ -1,0 +1,119 @@
+.payment h1 {
+    text-align: left;
+    margin-left: 8rem;
+}
+
+.payment h3 {
+    font-size: 1.25rem;
+    margin-left: 8rem;
+}
+
+.payment-type{
+    display: flex;
+    justify-content: space-around;
+    margin:3rem 5rem;
+}
+
+.paymentbox {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    gap:0;
+}
+
+.paymentbox input {
+    width: 100%;
+}
+
+.billing-line3 {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 4rem;
+}
+
+.billing-line3 input {
+    width: 100%;
+}
+
+.payment-line3 {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 4rem;
+}
+
+.payment-line3 input {
+    width: 100%;
+}
+
+.payment-button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.right-button {
+    display: flex;
+    gap: 2rem;
+}
+
+.left-button a:nth-child(1) {
+    width: max-content;
+    background-color: rgb(252, 250, 246);
+    color: rgb(98, 76, 64);
+    border: 2px solid rgb(98, 76, 64);
+}
+
+.left-button a:nth-child(1):hover,
+.left-button a:nth-child(1):active,
+.left-button a:nth-child(1):focus {
+    width: max-content;
+    background-color: rgb(98, 76, 64);
+    color: rgb(252, 250, 246);
+}
+
+.right-button a:nth-child(1) {
+    width: max-content;
+    color: rgb(98, 76, 64);
+    background-color: rgb(252, 250, 246);
+
+    transition: all 0.5s ease-in;
+}
+
+.right-button a:nth-child(1):hover,
+.right-button a:nth-child(1):active,
+.right-button a:nth-child(1):focus {
+    text-decoration: underline;
+}
+
+.right-button a:nth-child(2) {
+    width: max-content;
+    background-color: rgb(98, 76, 64);
+    color: rgb(252, 250, 246);
+}
+
+.right-button a:nth-child(2):hover,
+.right-button a:nth-child(2):active,
+.right-button a:nth-child(2):focus {
+    width: max-content;
+    background-color: rgb(252, 250, 246);
+    color: rgb(98, 76, 64);
+    border: 2px solid rgb(98,76,64);
+}
+
+@media screen and (max-width: 1000px) {
+    .paymentbox {
+      flex-direction: column;
+      padding: 2rem;
+     }
+    h2 { text-align: center;}
+    .payment-button {
+      flex-direction: column;
+    }
+    .left-button { order: 2; }
+    .right-button {
+      order: 1;
+      padding-bottom: 4rem;
+      gap: 0rem;
+    }
+}

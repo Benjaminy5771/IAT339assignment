@@ -1,0 +1,276 @@
+/* calendar section  */
+.table-container {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.calendar-table {
+  width: 30%;
+  border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 0.5rem;
+  text-align: center;
+
+}
+
+.calendar-table td:hover {
+  background-color: #C3A583;
+  color: white;
+}
+
+.selected {
+  background-color: #C3A583;
+  color: white;
+}
+
+.calendar-table th {
+  font-weight: bold;
+}
+
+.table-container.hidden {
+  display: none;
+
+}
+
+.calendar-image {
+  cursor: pointer;
+  margin-left: 70px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 50px;
+
+}
+
+.calendar-image.clicked+.table-container {
+  display: block;
+}
+
+.date-input-container {
+  margin-left: 180px;
+  margin-top: -38px;
+}
+
+.date-input {
+  width: 140px;
+  height: 25px;
+}
+
+/* instructor input section  */
+.dropdown-instructor {
+  position: relative;
+  width: 15%;
+  margin-left: auto;
+  margin-right: 23rem;
+  margin-top: -30px;
+}
+
+.dropdown-instructor input {
+  width: 100%;
+}
+
+.dropdown-instructor-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+
+.dropdown-instructor-content a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+/* calss type input section  */
+.dropdown-calssType {
+  position: relative;
+  width: 15%;
+  margin-left: auto;
+  margin-right: 7rem;
+
+  margin-top: -62px;
+}
+
+.dropdown-calssType input {
+  width: 100%;
+}
+
+.dropdown-calssType-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+
+.dropdown-calssType-content a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-calssType:hover .dropdown-calssType-content {
+  display: block;
+}
+
+.dropdown-instructor-content a:hover,
+.dropdown-calssType-content a:hover {
+  background-color: #C3A583;
+}
+
+.apply-button {
+  /* margin-top: 0px;
+  margin-left: 68rem; */
+  /* border: 1px solid red; */
+  margin-right: 5rem;
+  text-align: end;
+
+}
+
+.apply-button a {
+  display: inline-block;
+  background-color: transparent;
+  color: black;
+  text-decoration: underline;
+}
+
+
+
+
+/* overall schedule section  */
+.schedule {
+  /* border: 1px solid red; */
+  margin: 2rem 5rem;
+}
+
+.schedule-daily-cart {
+  flex: 3;
+}
+
+.schedule-daily {
+  display: flex;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 3px solid rgb(147, 125, 114);
+}
+
+.date {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* date  */
+.date :nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.date :nth-child(2) {
+  font-size: 3rem;
+}
+
+/* end of date  */
+
+
+/* schedule info section  */
+.schedule-each {
+  display: flex;
+  margin-top: 1.5rem;
+  padding-left: 2rem;
+  padding-left: 1rem;
+}
+
+.schedule-each a {
+  width: 30%;
+  flex: 1;
+  text-align: center;
+  margin: auto;
+}
+
+.schedule-each-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.schedule-each-info span {
+  margin-top: 0.2rem;
+}
+
+.schedule-each-info span:nth-child(2) {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+
+/* pop up window  */
+.popup {
+  width: 15rem;
+  height: 10rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: none;
+
+
+  justify-content: center;
+}
+
+#popupWindow p {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+}
+
+#popupWindow a {
+  text-decoration: underline;
+}
+
+
+.main-cta {
+  font-family: "sf";
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #FCFAF6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #775C4C;
+  border: 2px solid #775C4C;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.main-cta:active,
+.main-cta:hover,
+.main-cta:focus {
+  color: #FCFAF6;
+  background-color: #775C4C;
+  border-color: #775C4C;
+}
+
+@media screen and (max-width:1000px) {
+  .schedule-daily {
+    flex-direction: column;
+  }
+}

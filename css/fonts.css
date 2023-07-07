@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'playfair';
+	src: url('fonts/Playfair.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sf';
+  src: url('fonts/SFUIDisplay-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'sf-bold';
+  src: url('fonts/SFUIDisplay-Bold.ttf') format('truetype');
+}
