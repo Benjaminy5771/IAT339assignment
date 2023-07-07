@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+  <link href="css/vinyasa.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+  <link href="css/class.css" rel="stylesheet">
+  <link href="css/schedule.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+    <header>
+      <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
+      <a href="index.html"> <img src="lotus.png" class="logo" alt="Lotus Yoga Logo" width="50"> </a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-main">
+        <div class="dropdown">
+        <a href="schedule.html" class="nav-main-item">BOOK NOW</a>
+        </div>
+
+         <div class="dropdown">
+           <a href="class.html" class="nav-main-item">CLASSES</a>
+         </div>
+
+         <div class="dropdown">
+           <a href="sign-in.html" class="nav-main-item">SIGN IN</a>
+         </div>
+
+         <div class="image-container">
+            <a href="class-cart.html"><img src="images/cart-reg.png" alt="Original Image" class="original-image"></a>
+            <a href="class-cart.html"><img src="images/cart-hover.png" alt="Hover Image" class="hover-image"></a>
+         </div>
+       </nav>
+       </div>
+       <!-- </nav> -->
+      <i class="fa-solid fa-bars"></i>
+    <!-- </nav> -->
+  </div>
+
+    <h1>Book Now</h1>
+    <div class="date-image-container">
+      <img src="images/June.png" alt="June" width="100" class="calendar-image">
+    </div>
+
+    <div class="date-input-container">
+      <div class="date-input">
+        <input class="date-input" placeholder="Thursday, July 1 2023">
+      </div>
+
+      <div class="dropdown-instructor">
+        <input type="text" placeholder="Find your preferred instructor" id="instructor-input">
+
+        <div class="dropdown-instructor-content">
+          <a href="#">Tara</a>
+          <a href="#">Talese</a>
+          <a href="#">Tokey</a>
+        </div>
+      </div>
+
+      <div class="dropdown-calssType">
+        <input type="text" placeholder="Class Type">
+        <div class="dropdown-calssType-content">
+          <a href="#">Vinyasa Flow</a>
+          <a href="#">Power Flow</a>
+          <a href="#">Freedom Flow</a>
+        </div>
+      </div>
+
+      <div class="apply-button">
+        <a href="#">APPLY</a>
+      </div>
+
+    </div>
+
+
+    <div class="table-container hidden">
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>SU</th>
+            <th>M</th>
+            <th>TU</th>
+            <th>W</th>
+            <th>TH</th>
+            <th>F</th>
+            <th>SA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+          </tr>
+
+          <tr>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+            <td>08</td>
+            <td>09</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+
+
+
+
+    <section class="schedule">
+      <div class="schedule-daily">
+        <div class="date">
+          <span>July</span>
+          <span>2nd</span>
+        </div>
+
+        <div class="schedule-daily-cart">
+          <div class="schedule-each">
+            <div class="schedule-each-info">
+              <span>10:00AM</span>
+              <span>Power Flow</span>
+              <span>Talese</span>
+            </div>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
+          </div>
+
+
+          <div class="schedule-each">
+            <div class="schedule-each-info">
+              <span>2:00PM</span>
+                <span>Vinyasa Flow</span>
+                <span>Tara</span>
+            </div>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
+
+
+          </div>
+
+
+
+          <div class="schedule-each">
+            <div class="schedule-each-info">
+              <span>10:00AM</span>
+              <span>Freedom Flow</span>
+              <span>Tokey</span>
+            </div>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-daily">
+        <div class="date">
+          <span>July</span>
+          <span>3rd</span>
+        </div>
+
+        <div class="schedule-daily-cart">
+          <div class="schedule-each">
+            <div class="schedule-each-info">
+              <span>11:00AM</span>
+              <span>Freedom Flow</span>
+              <span>Tokey</span>
+            </div>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
+          </div>
+
+          <div class="schedule-each">
+            <div class="schedule-each-info">
+              <span>4:00PM</span>
+              <span>Vinyasa Flow</span>
+              <span>Tara</span>
+            </div>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
+          </div>
+
+          <div class="schedule-each">
+            <div class="schedule-each-info">
+              <span>9:00AM</span>
+              <span>Power Flow</span>
+              <span>Talese</span>
+            </div>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- create a pop up window  -->
+      <!-- <div id="popupWindow" class="popup">
+        <p>Booked successfully!</p>
+        <p><a href="class-cart.html">Click to view cart</a></p>
+      </div> -->
+
+      <script>
+        function showPopup() {
+          // Display the pop-up window
+          document.getElementById("popupWindow").style.display = "block";
+
+          // Set timeout to hide the pop-up after 3 seconds
+          setTimeout(function () {
+            document.getElementById("popupWindow").style.display = "none";
+          }, 2000);
+        }
+      </script>
+      <!-- end of pop up window  -->
+
+    </section>
+
+
+
+
+    <section class="footer">
+      <div class="footer-content">
+        <div class="styleguide">
+          <div>Style Guide</div>
+          <a href="styleguide.html">Style Guide & References</a><br><br>
+        </div>
+
+        <div class="Lotus">
+          <div>Lotus</div>
+          <a href="#">My Account</a><br>
+          <a href="#">Memberships</a><br>
+          <a href="#">FAQ</a>
+        </div>
+
+        <div class="about">
+          <div>About</div>
+          <a href="#">Terms & Conditions</a><br>
+          <a href="#">Privacy</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- END OF FOOTER  -->
+    <script>
+      var cartImage = document.querySelector('.cart-image');
+      cartImage.addEventListener('mouseover', function () {
+        this.src = 'images/cart-hover.png';
+      });
+      cartImage.addEventListener('mouseout', function () {
+        this.src = 'images/cart-reg.png';
+      });
+    </script>
+
+    <script>
+      var instructorInput = document.getElementById("instructor-input");
+      var dropdownContent = document.querySelector(".dropdown-instructor-content");
+
+      instructorInput.addEventListener("input", function () {
+        var value = instructorInput.value;
+
+        if (value.includes("T")) {
+          dropdownContent.style.display = "block";
+        }
+        else if (value.includes("t")) {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "none";
+        }
+      });
+    </script>
+
+</body>
+
+</html>

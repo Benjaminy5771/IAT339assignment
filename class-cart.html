@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lotus Yoga</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+  <link href="css/class-cart.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+    <header>
+      <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
+      <a href="index.html"> <img src="lotus.png" class="logo" alt="Lotus Yoga Logo" width="50"> </a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-main">
+        <div class="dropdown">
+        <a href="schedule.html" class="nav-main-item">BOOK NOW</a>
+        </div>
+
+         <div class="dropdown">
+           <a href="class.html" class="nav-main-item">CLASSES</a>
+         </div>
+
+         <div class="dropdown">
+           <a href="sign-in.html" class="nav-main-item">SIGN IN</a>
+         </div>
+
+         <div class="image-container">
+            <a href="class-cart.html"><img src="images/cart-reg.png" alt="Original Image" class="original-image"></a>
+            <a href="class-cart.html"><img src="images/cart-hover.png" alt="Hover Image" class="hover-image"></a>
+         </div>
+
+      <i class="fa-solid fa-bars"></i>
+      </nav>
+  </div>
+
+      <div class="container">
+        <div class="cart-container">
+          <h1 class="cart-title">Your Cart</h1>
+          <table class="table">
+            <tr class="table-header">
+              <th class="table-item-special">Item</th>
+              <th class="table-item">Price</th>
+              <th class="table-item">Quantity</th>
+              <th class="table-item">Total</th>
+              <th class="table-item"></th>
+            </tr>
+            <tr class="table-row">
+              <td class="table-item-special">Single Session Drop-In</td>
+              <td class="table-item">$32.5</td>
+              <td class="table-item">1</td>
+              <td class="table-item">$32.5</td>
+              <td class="table-item remove-item" onclick="removeItem(this)">x</td>
+             <tr class="table-row">
+              <td class="table-item-special">Monthly Pass(June)</td>
+              <td class="table-item">$45</td>
+              <td class="table-item">1</td>
+              <td class="table-item">$45</td>
+              <td class="table-item remove-item" onclick="removeItem(this)">x</td>
+            </tr>
+            <tr>
+              <td><br><br><br><br><br></td>
+            </tr>
+            </table>
+
+        <br><br><br><br>
+        <table class="receipt-table">
+          <tr>
+            <td colspan="2" style="text-align: center;">Order Summary</td>
+          </tr>
+          <tr>
+            <td>1 x Drop-In</td>
+            <td>$32.5</td>
+          </tr>
+          <tr>
+            <td>1 x Monthly Pass (June)</td>
+            <td>$45</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$77.5</td>
+          </tr>
+        </table>
+        </div>
+
+      </div>
+      <div class="checkout-btn-container">
+       <a class="checkout-btn" href="payment.html">continue to checkout</a></div>
+
+       <!--footer-->
+       <section class="footer">
+         <div class="footer-content">
+           <div class="styleguide">
+             <div>Style Guide</div>
+             <a href="styleguide.html">Style Guide & References</a><br><br>
+           </div>
+
+           <div class="Lotus">
+             <div>Lotus</div>
+             <a href="#">My Account</a><br>
+             <a href="#">Memberships</a><br>
+             <a href="#">FAQ</a>
+           </div>
+
+           <div class="about">
+             <div>About</div>
+             <a href="#">Terms & Conditions</a><br>
+             <a href="#">Privacy</a>
+             <a href="#">Contact Us</a>
+           </div>
+
+         </div>
+      </section>
+
+    </div>
+
+    <script>
+      function removeItem(element) {
+        // remove the item from the cart
+        var row = element.parentNode;
+        while (row.tagName.toLowerCase() !== "tr") {
+          row = row.parentNode;
+        }
+        row.parentNode.removeChild(row);
+      }
+    </script>
+
+
+    </body>
+
+
+
+
+
+
+</html>

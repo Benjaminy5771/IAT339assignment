@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Yoga</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/sign-in.css" rel="stylesheet">
+    <link href="css/sign-up.css" rel="stylesheet">
+    <link href="css/dropdown.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d50ef10e6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+    <header>
+      <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
+      <a href="index.html"> <img src="lotus.png" class="logo" alt="Lotus Yoga Logo" width="50"> </a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-main">
+        <div class="dropdown">
+        <a href="schedule.html" class="nav-main-item">BOOK NOW</a>
+        </div>
+
+         <div class="dropdown">
+           <a href="class.html" class="nav-main-item">CLASSES</a>
+         </div>
+
+         <div class="dropdown">
+           <a href="sign-in.html" class="nav-main-item">SIGN IN</a>
+         </div>
+
+         <div class="image-container">
+            <a href="class-cart.html"><img src="images/cart-reg.png" alt="Original Image" class="original-image"></a>
+            <a href="class-cart.html"><img src="images/cart-hover.png" alt="Hover Image" class="hover-image"></a>
+         </div>
+
+      <i class="fa-solid fa-bars"></i>
+      </nav>
+  </div>
+
+    <!-- main section  -->
+    <section class="sign-up">
+        <div class="sign-up-img">
+            <img src="images/signup.png" style="width: 500px; height: 550px;" alt="Image of two women sitting crosslegged, doing a side stretch">
+        </div>
+
+        <div class="sign-up-info">
+            <h2>Let's Be Friends</h2>
+
+            <div class="line1">
+                <div class="line1-1">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" placeholder="John">
+                </div>
+                <div class="line1-2">
+                    <label for="lName">last Name</label>
+                    <input type="text" id="lName" placeholder="M. Doe">
+                </div>
+            </div>
+
+            <div class="line2">
+                <div class="line2-1">
+                    <label for="bd">Birthday</label>
+                    <input type="text" id="bd" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="line2-2">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="xxx@gamil.com">
+                </div>
+            </div>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="4360 main st">
+
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="password"><br>
+            <!-- <a href="#"><span>Forgot Password?</span></a> -->
+
+            <!-- <button type="button" class="main-cta"><a href="index.html">Sign Up</a></button> -->
+            <a href="sign-in.html" class="main-cta">Sign Up</a>
+        </div>
+
+    </section>
+
+    <!-- end of main section  -->
+
+
+    <section class="footer">
+      <div class="footer-content">
+        <div class="styleguide">
+          <div>Style Guide</div>
+          <a href="styleguide.html">Style Guide & References</a><br><br>
+        </div>
+
+        <div class="Lotus">
+          <div>Lotus</div>
+          <a href="#">My Account</a><br>
+          <a href="#">Memberships</a><br>
+          <a href="#">FAQ</a>
+        </div>
+
+        <div class="about">
+          <div>About</div>
+          <a href="#">Terms & Conditions</a><br>
+          <a href="#">Privacy</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>
